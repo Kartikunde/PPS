@@ -1,0 +1,125 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+
+double amount;
+
+int choice;
+
+cout << "Currency Converter\n";
+
+cout << "Select a currency to convert from:\n";
+
+cout << "1. USD (US Dollar)\n";
+
+cout << "2. EUR (Euro)\n";
+
+cout << "3. JPY (Japanese Yen)\n";
+
+cout << "4. GBP (British Pound)\n";
+
+cout << "5. AUD (Australian Dollar)\n";
+
+cout<< "6. INR (Indian Rupee)\n";
+
+cout << "Enter your choice (1-6): ";
+
+cin >> choice;
+
+cout << "Enter the amount: ";
+
+cin >> amount;
+
+switch (choice) {
+
+case 1: // USD
+
+cout << amount << " USD = " << amount * 0.85 << " EUR\n"; 
+
+cout << amount << " USD = " << amount * 110.0 << " JPY\n"; 
+
+cout << amount << " USD = " << amount * 0.75 << " GBP\n"; 
+
+cout << amount << " USD = " << amount * 1.35 << " AUD\n"; 
+
+cout << amount << " USD = " << amount * 74.0 << " INR\n";
+break;
+case 2: // EUR cout << amount << " EUR = " << amount * 
+
+1.18 << " USD\n"; 
+
+cout << amount << " EUR = " << amount * 129.0 <<"JPY\n"; 
+
+cout << amount << " EUR = " << amount * 0.88 << " GBP\n"; 
+
+cout << amount << " EUR = " << amount * 1.59 << " AUD\n"; 
+
+cout << amount << " EUR = " << amount * 91.17 <<"INR\n"; 
+
+break;
+
+case 3: // JPY
+
+cout << amount << " JPY = " << amount * 0.0091 << " 
+
+USD\n"; 
+
+cout << amount << " JPY = " << amount * 0.0078 << " EUR\n"; 
+
+cout << amount << " JPY = " << amount * 0.0069 << "GBP\n"; 
+
+cout << amount << " JPY = " << amount * 0.0123 << " AUD\n"; 
+
+cout<< amount << " JPY = " << amount * 0.56 << "INR\n"; 
+
+break;
+
+case 4: // GBP
+
+cout << amount << " GBP = " << amount * 1.33 << " USD\n"; 
+
+cout << amount << " GBP = " << amount * 1.14 << " EUR\n"; 
+
+cout << amount << " GBP = " << amount * 145.0 << " JPY\n"; 
+
+cout << amount << " GBP = " << amount * 1.78 << " AUD\n"; 
+
+cout << amount <<" GBP = " << amount * 109.73<< "INR\n";
+break;
+case 5: // AUD
+
+cout << amount << " AUD = " << amount * 0.74 << "USD\n"; 
+
+cout << amount << " AUD = " << amount * 0.63 << " EUR\n"; 
+
+cout << amount << " AUD = " << amount * 0.56 << " GBP\n"; 
+
+cout << amount << " AUD = " << amount * 81.0 << " JPY\n"; 
+
+cout << amount << " AUD = " << amount * 56.43 << "INR\n"; 
+
+break;
+
+case 6:// INR
+
+cout << amount << " INR = " << amount * 0.012 << " USD\n"; 
+
+cout << amount << " INR = " << amount * 0.11 << " EUR\n"; 
+
+cout << amount << " INR = " << amount * 0.0091 << " GBP\n"; 
+
+cout << amount << " INR = " << amount * 1.78 << " JPY\n"; 
+
+cout << amount << " INR = " << amount * 0.018 <<" AUD\n"; 
+
+default:
+
+cout << "Invalid choice.\n";
+
+}
+
+return 0;
+
+}
